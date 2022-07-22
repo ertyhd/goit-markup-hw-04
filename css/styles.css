@@ -10,6 +10,7 @@
     --primary-text-color: #757575;
     --title-color: #212121;
     --incolor-background: #2F303A;
+    --bg-non-image: #C4C4C4;
 }
 /* Reset styles */
 h1, h2, h3, h4, p {
@@ -148,8 +149,10 @@ button {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.hero,
 .incolor-section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--incolor-background);
 }
 .team {
@@ -193,11 +196,19 @@ button {
 }
 /* Hero */
 .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
+    background: var(--bg-non-image);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/indeximages/bg-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-clip: padding-box;
 }
-
 /* Studio */
 .studio-section {
     display: flex;
@@ -206,10 +217,8 @@ button {
     margin-left: 30px;
 }
 /* Portfolio */
-
 .portfolio-list {
-    display: flex;
-    
+    display: flex; 
 }
 .portfolio-list .items + .items {
     margin-left: 30px;
@@ -222,11 +231,14 @@ button {
     display: flex;
     flex-wrap: wrap;
 }
-.enployees-cards:not(:nth-child(3n)) {
+.enployees-cards:not(:nth-child(4n)) {
     margin-right: 30px;
 }
 .enployees-cards {
     flex-basis: calc(100% - 90px) / 4;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .enployees-cards-text {
     padding-top: 30px;
@@ -239,6 +251,7 @@ button {
     font-family: inherit;
 }
 .button.index-page {
+    display: block;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -246,6 +259,8 @@ button {
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .button.index-page:hover,
 .button.index-page:focus {
