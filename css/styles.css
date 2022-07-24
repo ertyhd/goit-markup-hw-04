@@ -34,6 +34,7 @@ a {
 button {
     cursor: pointer;
 }
+
 /* Body styles */
 .container {
     margin-left: auto;
@@ -230,12 +231,17 @@ button {
 .enployees {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+
 }
-.enployees-cards:not(:nth-child(4n)) {
+/* .enployees-cards:not(:nth-child(4n)) {
     margin-right: 30px;
-}
+} */
+
+
 .enployees-cards {
-    flex-basis: calc(100% - 90px) / 4;
+
+    flex-basis: calc((100% - 90px) / 4);
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -243,6 +249,13 @@ button {
 .enployees-cards-text {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.social-list-links {
+    /* width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff; */
+    fill: currentColor;
 }
 /* Buttons */
 .button {
