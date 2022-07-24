@@ -34,7 +34,9 @@ a {
 button {
     cursor: pointer;
 }
-
+:focus {
+    outline: none;
+}
 /* Body styles */
 .container {
     margin-left: auto;
@@ -129,6 +131,7 @@ button {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+    margin-bottom: 16px;
 }
 .team-title,
 .portfolio-title {
@@ -188,6 +191,7 @@ button {
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--primary-accent);
+    border: none;
 } 
 .site-nav .link.current {
     color: var(--primary-accent);
@@ -217,6 +221,15 @@ button {
 .studio-section .items + .items {
     margin-left: 30px;
 }
+.studio-decore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
 /* Portfolio */
 .portfolio-list {
     display: flex; 
@@ -250,13 +263,30 @@ button {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 .social-list-links {
-    /* width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #fff; */
-    fill: currentColor;
+    background-color: #fff;
+    fill: #afb1b8;
+    /* fill: currentColor; */
 }
+.social-list-links:focus, 
+.social-list-links:hover {
+    background-color: var(--primary-accent);
+    fill: var(--third-light-color);
+    border: none;
+}
+
 /* Buttons */
 .button {
     color: var(--title-color);
@@ -278,6 +308,7 @@ button {
 .button.index-page:hover,
 .button.index-page:focus {
     background-color: var(--secondary-accent);
+    border: none;
 }
 .button-port {
     display: block;
@@ -294,7 +325,8 @@ button {
 .button-port:hover,
 .button-port:focus {
     background-color: var(--primary-accent);
-    color: var(--third-light-color)
+    color: var(--third-light-color);
+    border: none;
 }
 .button.primary {
     color: var(--third-light-color);
