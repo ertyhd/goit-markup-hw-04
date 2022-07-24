@@ -4,13 +4,15 @@
     --logo-color-light: #ffffff;
     --primary-accent: #2196F3;
     --secondary-accent: #188CE8;
-    --primary-light-color: #E5E5E5;
+    /* --primary-light-color: #E5E5E5; */
+    --primary-light-color: #F5F4FA;
     --secondery-light-color: #F5F4FA;
     --third-light-color: #ffffff;
     --primary-text-color: #757575;
     --title-color: #212121;
     --incolor-background: #2F303A;
     --bg-non-image: #C4C4C4;
+    --border-icons: #AFB1B8
 }
 /* Reset styles */
 h1, h2, h3, h4, p {
@@ -64,7 +66,8 @@ button {
     padding-bottom: 94px;
 }
 .team-title,
-.portfolio-title {
+.portfolio-title,
+.partners-title {
     margin-bottom: 50px;
 }
 /* Logo */
@@ -100,7 +103,8 @@ button {
 .studio-title, 
 .portfolio-title, 
 .team-title,
-.name-title {
+.name-title,
+.partners-title {
     color: var(--title-color);    
 }
 .underheader-title {
@@ -134,7 +138,8 @@ button {
     margin-bottom: 16px;
 }
 .team-title,
-.portfolio-title {
+.portfolio-title,
+.partners-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -172,7 +177,15 @@ button {
     display: flex;
     align-items: center;
 }
-
+.header-contacts {
+    display: flex;
+    align-items: center;
+}
+.header-contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
+    /* align-items: center; */
+}
 /* Navigations */
 .site-nav {
     display: flex;
@@ -349,6 +362,36 @@ button {
     font-size: 16px;
     line-height: 1.8;   
 }
+/* Partners */
+.partners {
+    background-color: var(--primary-light-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.partners-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.partners-list-items {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.partners-list-links {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid var(--border-icons);
+    border-radius: 4px;
+    fill: var(--border-icons)
+}
+.partners-list-links:hover,
+.partners-list-links:focus {
+    border: 1px solid var(--primary-accent);
+    fill: var(--primary-accent);
+}
 /* Footer */
 address {
     font-style: normal;
@@ -372,6 +415,45 @@ address {
 .logo-footer {
     display: block;
     margin-bottom: 20px;
+}
+.footer-container {
+    display: flex;
+}
+.footer-social {
+    margin-top: 12px;
+    margin-left: 70px;
+}
+.footer-social-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-light-color);
+    margin-bottom: 20px;
+}
+.footer-social-list-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+    fill: var(--third-light-color);
+    /* fill: currentColor; */
+}
+.footer-social-list-links:focus, 
+.footer-social-list-links:hover {
+    background-color: var(--primary-accent);
+    fill: var(--third-light-color);
+    border: none;
+}
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 /* Portfolio page */
 .portfolio-buttons-list {
