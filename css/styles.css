@@ -4,8 +4,8 @@
     --logo-color-light: #ffffff;
     --primary-accent: #2196F3;
     --secondary-accent: #188CE8;
-    /* --primary-light-color: #E5E5E5; */
-    --primary-light-color: #F5F4FA;
+    --primary-light-color: #E5E5E5;
+    /* --primary-light-color: #F5F4FA; */
     --secondery-light-color: #F5F4FA;
     --third-light-color: #ffffff;
     --primary-text-color: #757575;
@@ -241,6 +241,7 @@ button {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
+    background-color: var(--secondery-light-color);
 }
 
 /* Portfolio */
@@ -333,7 +334,7 @@ button {
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
-    background-color: transparent;
+    background-color: var(--secondery-light-color);
 }
 .button-port:hover,
 .button-port:focus {
@@ -443,7 +444,6 @@ address {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);;
     fill: var(--third-light-color);
-    /* fill: currentColor; */
 }
 .footer-social-list-links:focus, 
 .footer-social-list-links:hover {
